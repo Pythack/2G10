@@ -23,9 +23,8 @@ function format() {
   var device_type = getDeviceType();
   if (device_type == "mobile") {
     document.getElementById('stylesheet').setAttribute('href', 'mobile.css');
-    alert('mobile');
   }
   if (device_type == "tablet") {
-    alert('This is a tablet!');
+    document.getElementById('stylesheet').setAttribute('href', 'tablet.css');
   }
 }
