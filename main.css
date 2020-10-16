@@ -2,3 +2,9 @@ h1 {
   position: absolute;
   left: 20cm;
 }
+
+#description {
+  position: absolute;
+  top: 5cm;
+  left: 10cm;
+}
