@@ -10,3 +10,15 @@ h1 {
   width: 12cm;
   font-size: 20;
 }
+
+#document_table {
+  position: absolute;
+  top: 5cm;
+  left: 8cm;
+  height: 10cm;
+  overflow-y: scroll;
+}
+
+td {
+  padding: 10px;
+}
