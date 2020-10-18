@@ -1,3 +1,7 @@
+body {
+  background-image: url("images/bg.jpg");
+}
+
 h1 {
   position: absolute;
   left: 20cm;
@@ -16,6 +20,7 @@ h1 {
   top: 5cm;
   left: 19cm;
   height: 9.725cm;
+  background-color: white;
   overflow-y: scroll;
 }
 
@@ -24,19 +29,23 @@ button {
   transition: 0.2s;
 }
 
+button:hover {
+  cursor: pointer;
+  border-radius: 0px;
+}
+
 tr:hover button {
   background-color: #ffc67d;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: #583302;
-}
-
-td {
-  padding: 10px;
+tr {
+  transition: 0.2s;
 }
 
 tr:hover {
   background-color: cyan;
+}
+
+td {
+  padding: 10px;
 }
