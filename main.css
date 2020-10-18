@@ -24,15 +24,14 @@ button {
   transition: 0.2s;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: #583302;
-}
-
 tr:hover button {
   background-color: #ffc67d;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: #583302;
+}
 
 td {
   padding: 10px;
