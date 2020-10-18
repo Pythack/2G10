@@ -33,7 +33,7 @@ function calculate(tool) {
   if (tool == "ecart_relatif") {
     value1 = document.getElementById('value1').value;
     value2 = document.getElementById('value2').value;
-    result = Math.abs(value1-value2)/value2
+    result = Math.abs(value1-value2)/value1
     result *= 100
     document.getElementById('result').value = result + "%";
   }
