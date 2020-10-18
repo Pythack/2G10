@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <script src="tools.js"></script>
+  <meta charset="utf-8">
+  <link rel="stylesheet" id="stylesheet" href="../main.css">
+  <title>2G10 - Outils</title>
+</head>
+  <body onload="format()">
+    <h1>Outils d'écart relatif</h1>
+    <div class="tools">
+      Valeure théorique :
+      <br/>
+      <input type="number" id="value1" step="0.0000000001"></input>
+      <br/><br/>
+      Valeure expérimentale :
+      <br/>
+      <input type="number" id="value2" step="0.0000000001"></input>
+      <br/><br/>
+      <button onclick="calculate('ecart_relatif')">Calculer</button>
+      <br/><br/>
+      Ecart théorique :
+      <br/>
+      <input id="result" readonly></input>
+    </div>
+  </body>
+</html>
