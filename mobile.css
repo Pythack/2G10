@@ -1,3 +1,13 @@
+body {
+  background-image: url("images/bg.jpg");
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
 h1 {
   position: absolute;
   left: 9cm;
@@ -21,4 +31,40 @@ h1 {
 
 td {
   padding: 10px;
+}
+
+button {
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+tr:hover button {
+  background-color: #ffc67d;
+}
+
+tr {
+  transition: 0.2s;
+}
+
+tr:hover {
+  background-color: cyan;
+}
+
+td {
+  padding: 10px;
+}
+
+.tools {
+  position: absolute;
+  top: 5cm;
+  left: 10cm;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 8px #717171;
 }
