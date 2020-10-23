@@ -36,5 +36,22 @@ function calculate(tool) {
     result = Math.abs(value1-value2)/value1
     result *= 100
     document.getElementById('result').value = result + "%";
+  } else if (tool == "masse_volumique") {
+    masse = document.getElementById('value1').value;
+    volume = document.getElementById('value2').value;
+    mv = document.getElementById('result').value;
+    u1 = document.getElementById('u_masse').checked;
+    u2 = document.getElementById('u_volume').checked;
+    u3 = document.getElementById('u_massev').checked;
+    if (u3 == true) {
+      result = masse/volume;
+      document.getElementById('result').value = result;
+    } else if (u1 == true) {
+      result = mv*volume;
+      document.getElementById('value1').value = result;
+    } else if (u2 == true) {
+      result = masse/mv;
+      document.getElementById('value2').value = result;
+    }
   }
 }

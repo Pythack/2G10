@@ -1,18 +1,26 @@
 <html>
 <head>
   <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/d6703c2498.js"></script>
   <meta charset="utf-8">
   <link rel="stylesheet" id="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <title>2G10</title>
 </head>
 <body onload="format()">
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+  <a href="./documents.html" class="menu menu_border">Documents</a>
+  <a onclick="dropdown()" id="dropdown_btn" class="menu menu_border">Outils<i class="fa fa-caret-down"></i></a>
+  <div id="dropdown-container">
+    <a href="outils/ecart_relatif.html" class="menu">Ecart relatif</a>
+    <a href="outils/masse_volumique.html" class="menu">Masse volumique</a>
+  </div>
+</div>
   <h1>Site pour la classe 2G10</h1>
+  <span style="cursor:pointer" onclick="openNav()"><i class="fas fa-bars"></i></span>
   <p id="description">Bienvenue sur le site de la classe 2G10. Ici, vous pouvez télécharger des
     documents en rapport avec les cours, ou avoir accès à des outils tel des
     convertisseurs et des calculateurs. </p>
-  <div id="menu">
-  <a href="documents.html"><button>Documents</button></a>
-  <a href="tools.html"><button>Outils</button></a>
-  </div>
 </body>
 </html>

@@ -28,3 +28,19 @@ function format() {
     document.getElementById('stylesheet').setAttribute('href', 'tablet.css');
   }
 }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+function dropdown() {
+  var dropdownContent = document.getElementById('dropdown-container');
+  if (dropdownContent.style.height == "3.7cm") {
+    dropdownContent.style.height = "0";
+  } else {
+    dropdownContent.style.height = "3.7cm";
+  }
+}
