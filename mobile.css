@@ -1,5 +1,11 @@
 body {
-  background-image: url("images/bg.jpg");
+  background-image: url("images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Raleway', sans-serif;
   -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -10,13 +16,13 @@ body {
 
 h1 {
   position: absolute;
-  left: 9cm;
+  left: 20cm;
 }
 
 #description {
   position: absolute;
   top: 5cm;
-  left: 8cm;
+  left: 19cm;
   width: 12cm;
   font-size: 20;
 }
@@ -24,23 +30,122 @@ h1 {
 #document_table {
   position: absolute;
   top: 5cm;
-  left: 8cm;
-  height: 10cm;
+  left: 19cm;
+  height: 9.725cm;
+  background-color: white;
+  color: black;
   overflow-y: scroll;
 }
 
-td {
-  padding: 10px;
+table {
+  color: black;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.menu_border {
+  border-top: 1px solid white;
+}
+
+.menu::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: ease 1s;
+}
+
+.menu:hover::after {
+    width: 20%;
+}
+
+i {
+  margin: 10px;
+  color: white;
+  font-size: 50px;
+}
+
+i[class="fa fa-caret-down"] {
+  font-size: 20px;
+}
+
+i[class="fas fa-times"] {
+  font-size: 30px;
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#dropdown-container {
+  height: 0;
+  overflow-y: hidden;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 1s cubic-bezier(.77,0,.18,1);
+
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 button {
-  border-radius: 10px;
   transition: 0.2s;
+}
+
+button {
+  border-radius: 50px;
+  width: 3cm;
+  height: 1cm;
+  background-color: #0077ff;
+  color: white;
+  border-style: hidden;
 }
 
 button:hover {
   cursor: pointer;
-  border-radius: 0px;
+  box-shadow: 0px 0px 1px 2px #88c0ff;
+}
+
+button:active {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px #88c0ff;
 }
 
 tr:hover button {
@@ -62,9 +167,48 @@ td {
 .tools {
   position: absolute;
   top: 5cm;
-  left: 10cm;
+  left: 21.5cm;
+  color: black;
   background-color: white;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 7px 7px 8px #717171;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input {
+  transition: 0.2s;
+}
+
+input[type='text']:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+#outils_physique {
+  position: absolute;
+  top: 5cm;
+  left: 19cm;
+  background-color: white;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
 }
