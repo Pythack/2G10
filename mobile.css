@@ -16,13 +16,13 @@ body {
 
 h1 {
   position: absolute;
-  left: 20cm;
+  left: 9cm;
 }
 
 #description {
   position: absolute;
   top: 5cm;
-  left: 19cm;
+  left: 8cm;
   width: 12cm;
   font-size: 20;
 }
@@ -167,7 +167,7 @@ td {
 .tools {
   position: absolute;
   top: 5cm;
-  left: 21.5cm;
+  left: 10cm;
   color: black;
   background-color: white;
   padding: 20px;
