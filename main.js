@@ -38,9 +38,9 @@ function closeNav() {
 }
 function dropdown() {
   var dropdownContent = document.getElementById('dropdown-container');
-  if (dropdownContent.style.height == "3.7cm") {
+  if (dropdownContent.style.height == "93px") {
     dropdownContent.style.height = "0";
   } else {
-    dropdownContent.style.height = "3.7cm";
+    dropdownContent.style.height = "93px";
   }
 }
