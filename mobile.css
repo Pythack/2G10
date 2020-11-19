@@ -54,6 +54,7 @@ table {
   border-top: 1px solid white;
 }
 
+/*
 .menu::after {
     content: '';
     display: block;
@@ -67,6 +68,7 @@ table {
     width: 20%;
 }
 
+*/
 i {
   margin: 10px;
   color: white;
